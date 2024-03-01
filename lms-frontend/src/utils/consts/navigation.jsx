@@ -43,17 +43,18 @@ export const DASHBOARD_SIDEBAR_LINKS=[
         path:'/admin/payments',
         icon:<PaidIcon/>
     },
-
-    
-]
-
-export const DASHBOARD_SIDEBAR_BOTTOM_LINKS=[
     {
         key :'settings',
         lable:'Settings',
         path:'/admin/settings',
         icon:<SettingsIcon/>
     },
+
+    
+]
+
+export const DASHBOARD_SIDEBAR_BOTTOM_LINKS=[
+    
 
     {
         key :'logout',
