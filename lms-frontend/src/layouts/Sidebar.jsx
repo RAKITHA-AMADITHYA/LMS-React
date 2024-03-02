@@ -3,12 +3,13 @@ import { DASHBOARD_SIDEBAR_BOTTOM_LINKS, DASHBOARD_SIDEBAR_LINKS } from '../util
 import { Link } from 'react-router-dom';
 import { linkClasses } from '@mui/material';
 import AppLogo from '../assets/images/bestway-logo.png'
+import Badge from '@mui/material/Badge';
 
 function Sidebar() {
 
     const linkClasses = 'flex items-center justify-center gap-2 font-light px-3 py-2 hover:bg-neutral-700 hover:no-underline active:bg-neutral-600 rounded-sm text-base';
     return (
-        <div className='flex flex-col w-64 bg-gray-100'>
+        <div className='hidden sm:flex flex-col w-64 bg-gray-100'>
             {/*Header Container  */}
             <div className="top-part h-18 bg-gray-100 text-white flex items-center disp p-4" >
                 {/* <span className='text-red-500 text-xl'>E-Tutor</span> */}

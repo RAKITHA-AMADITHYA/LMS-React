@@ -10,7 +10,7 @@ function TotalCountCard({ ...props }) {
           color: '#fff',
           borderRadius: 2,
           flexDirection: 'column',
-          mt:2
+          mt:5
         }}
       >
         <Grid item lg={12} display={'flex'} justifyContent={'center'} height={45}>

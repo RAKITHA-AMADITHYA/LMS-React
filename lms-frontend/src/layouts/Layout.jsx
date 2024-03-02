@@ -5,10 +5,10 @@ import Header from './Header';
 function Layout() {
   return (
     <div className='flex flex-row h-screen w-screen overflow-hidden'>
-    <Sidebar/>
+      <Sidebar/>
       <div className='flex-1'>
       <Header/> 
-      <div><Outlet /></div>
+      <div ><Outlet /></div>
       </div>
     </div>
   );

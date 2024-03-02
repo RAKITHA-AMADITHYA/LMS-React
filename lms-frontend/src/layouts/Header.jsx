@@ -54,9 +54,13 @@ function Header() {
                 <SearchIcon className='text-gray-400 absolute top-1/2 -translate-y-1/2 left-1' />
                 <input type="text" placeholder='Search' className='text-sm focus:outline-none active:outline-none h-10 w-[22rem] border border-gray-300  rounded-sm px-4 pl-7' />
             </div>
+            <div></div>
 
             <div className='flex items-center ml-9'>
-                <NotificationsOutlinedIcon fontSize="large" className='text-gray-600' />
+
+                <Badge color="secondary" badgeContent={20}>
+                    <NotificationsOutlinedIcon fontSize="large" className='text-gray-600' />
+                </Badge>
             </div>
 
             <div className='text-end font-semibold ml-3'>
@@ -74,22 +78,22 @@ function Header() {
                     <Avatar alt="Remy Sharp" src={UserImg} />
                 </StyledBadge>
                 <Menu
-    anchorEl={anchorEl}
-    open={Boolean(anchorEl)}
-    onClose={handleClose}
-    anchorOrigin={{
-        vertical: 'bottom',
-        horizontal: 'right',
-    }}
-    transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-    }}
-    getContentAnchorEl={null}
->
-    <MenuItem onClick={handleClose}>My Account</MenuItem>
-    <MenuItem onClick={handleClose}>Logout</MenuItem>
-</Menu>
+                    anchorEl={anchorEl}
+                    open={Boolean(anchorEl)}
+                    onClose={handleClose}
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'right',
+                    }}
+                    transformOrigin={{
+                        vertical: 'top',
+                        horizontal: 'right',
+                    }}
+                    getContentAnchorEl={null}
+                >
+                    <MenuItem onClick={handleClose}>My Account</MenuItem>
+                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                </Menu>
 
             </div>
         </div>
