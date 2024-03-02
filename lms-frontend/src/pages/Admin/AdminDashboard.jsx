@@ -17,10 +17,12 @@ function AdminDashboard() {
         
   <Grid item xs={5} sm={5} md={5} lg={5} xl={5} className='p-4' flexDirection={'column'}>
     <Typography variant='h5'>Class Today</Typography>  
-    <Paper style={{ overflow: 'auto', maxHeight: 270, scrollbarWidth:'none' , border:'none' ,boxShadow:'none'}}>
+    <Paper style={{ overflow: 'auto', maxHeight: 400, scrollbarWidth:'none' , border:'none' ,boxShadow:'none'}}>
     <ClassTodayCard />
     <ClassTodayCard />
     <ClassTodayCard />
+    <ClassTodayCard />
+
 </Paper>
   </Grid>
 
