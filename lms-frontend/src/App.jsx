@@ -11,15 +11,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route element={<Layout />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/new-class" element={<AdminNewClass />} />
           <Route path="/admin/new-teacher" element={<AdminNewTeacher />} />
           <Route path="/admin/new-student" element={<AdminNewStudent />} />
           <Route path="/admin/payments" element={<AdminPayment />} />
           <Route path="/admin/settings" element={<AdminSettings />} />
-
-
         </Route>
       </Routes>
     </Router>
