@@ -1,9 +1,12 @@
 import React from 'react'
+import CardNewAdding from '../../../components/CardNewAdding'
 
 function AdminNewTeacher() {
   return (
-    <div>
-      <h1>This is New Teacher View</h1>
+    <div className='h-screen'>
+      <CardNewAdding 
+        name="New Teacher"
+      />
     </div>
   )
 }
