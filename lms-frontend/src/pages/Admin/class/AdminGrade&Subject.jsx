@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Grid, Button, TextField, Typography, Stack, FormControl, InputLabel, Select, MenuItem, TextareaAutosize } from '@mui/material';
 import { Link } from 'react-router-dom';
-import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
-import AddLinkIcon from '@mui/icons-material/AddLink';
-import PaidIcon from '@mui/icons-material/Paid';
-import NotesIcon from '@mui/icons-material/Notes';
 import ClassInsideNavbar from './ClassInsideNavbar';
 import MobileInsideNavbar from './MobileInsideNavbar';
 
