@@ -15,6 +15,8 @@ import AdminViewClassInfo from "./pages/Admin/class/AdminViewClassInfo";
 import AssignmenntOverview from "./pages/Admin/class/AssignmentOverview";
 import AssignmentSchedule from "./pages/Admin/class/AssignmentSchedule";
 import AssignmentReview from "./pages/Admin/class/AssignmentReview";
+import AdminStudentInfo from "./pages/Admin/student/AdminStudentInfo";
+import AdminTeacherInfo from "./pages/Admin/teacher/AdminTeacherInfo";
 
 
 function App() {
@@ -37,10 +39,8 @@ function App() {
           <Route path="/admin/assignment/overview" element={<AssignmenntOverview />} />
           <Route path="/admin/assignment/schedule" element={<AssignmentSchedule />} />
           <Route path="/admin/assignment/review" element={<AssignmentReview />} />
-
-
-
-
+          <Route path="/admin/student-info" element={<AdminStudentInfo />} />
+          <Route path="/admin/teacher-info" element={<AdminTeacherInfo />} />
 
         </Route>
       </Routes>
