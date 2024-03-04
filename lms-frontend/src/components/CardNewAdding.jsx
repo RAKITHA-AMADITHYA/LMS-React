@@ -19,13 +19,13 @@ function CardNewAdding(props) {
               xs: 110,
               sm: 130,
               md: 110,
-              lg: 130
+              lg: 140
             },
             width: {
               xs: 150,
               sm: 180,
               md: 150,
-              lg: 170
+              lg: 200
             },
             flexDirection: 'column',
           }}
