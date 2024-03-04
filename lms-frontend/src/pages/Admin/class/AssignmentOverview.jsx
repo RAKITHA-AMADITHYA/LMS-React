@@ -68,7 +68,7 @@ function AssignmentOverview() {
 
               
 
-              <Grid item xs={12} sm={12} md={12} lg={12} display={'flex'} justifyContent={'start'} margin={1} mt={20}>
+              <Grid item xs={12} sm={12} md={12} lg={12} display={'flex'} justifyContent={'start'} margin={1} mt={10}>
                 <Stack spacing={2} direction="row">
 
                 <Link to="/admin/assignment/schedule" style={{ textDecoration: 'none', color: 'inherit' }}>

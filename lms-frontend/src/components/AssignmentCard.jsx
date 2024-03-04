@@ -16,22 +16,22 @@ function AssignmentCard() {
     }}
   >
     <Grid container>
-      <Grid item lg={9}>
-        <h1>Lorem ipsum dolor sit amet</h1>
+      <Grid item lg={10}>
+        <h1 className='font-semibold text-xl text-orange-800' >Chemestry Assignment</h1>
       </Grid>
-      <Grid item lg={3} flexDirection={'colunm'}>
-        <h1>Due On </h1>
-        <h1>08/01/2024 </h1>
+      <Grid item lg={2} flexDirection={'colunm'}>
+        <h1 className='text-red-600 font-semibold'>Due On </h1>
+        <h1 className='font-semibold'>08/01/2024 </h1>
       </Grid>
     </Grid>
 
-    <Grid container mt={2}>
-      <Grid item lg={8}>
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun </h1>
+    <Grid container mt={1}>
+      <Grid item lg={10}>
+        <h1 className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun </h1>
       </Grid>
-      <Grid item lg={4} flexDirection={'colunm'}>
-        <h1>Submitted Assignments</h1>
-        <h1>14</h1>
+      <Grid item lg={2} flexDirection={'colunm'}>
+        <h1 className='text-green-600 font-semibold'>Submitted </h1>
+        <h1 className='font-semibold'>14</h1>
       </Grid>
     </Grid>
   </Box>

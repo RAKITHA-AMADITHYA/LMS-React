@@ -63,7 +63,7 @@ function AssignmentSchedule() {
                     shrink: true,
                   }}
                   inputProps={{
-                    step: 300, // 5 min
+                    step: 300, 
                   }}
                 />
                 <TextField
@@ -98,7 +98,7 @@ function AssignmentSchedule() {
                 />
               </Box>
 
-              <Grid item xs={12} sm={12} md={12} lg={12} display={'flex'} justifyContent={'start'} margin={1} mt={20}>
+              <Grid item xs={12} sm={12} md={12} lg={12} display={'flex'} justifyContent={'start'} margin={1} mt={10}>
                 <Stack spacing={2} direction="row">
                 <Link to="/admin/assignment/overview" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <Button variant="outlined">previous Page</Button>
