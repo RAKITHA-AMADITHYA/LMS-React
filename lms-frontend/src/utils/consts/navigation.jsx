@@ -46,7 +46,7 @@ export const DASHBOARD_SIDEBAR_LINKS=[
     {
         key :'settings',
         lable:'Settings',
-        path:'/admin/settings',
+        path:'/admin/settings-personalinfo',
         icon:<SettingsIcon/>
     },
 
