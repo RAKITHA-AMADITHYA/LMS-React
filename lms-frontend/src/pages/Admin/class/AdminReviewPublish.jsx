@@ -1,10 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Grid, Button, TextField, Typography, Stack, FormControl, InputLabel, Select, MenuItem, TextareaAutosize } from '@mui/material';
+import React from 'react';
+import { Box, Grid, Button, Typography, Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import ClassInsideNavbar from './ClassInsideNavbar';
 import MobileInsideNavbar from './MobileInsideNavbar';
-import pdf from '../../../assets/images/pdf.png'
+import pdf from '../../../assets/images/pdf.png';
+
 function AdminReviewPublish() {
+  const handlePublish = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Publish!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Published!",
+          text: "Your file has been published.",
+          icon: "success"
+        }).then(() => {
+          window.location.href = "/admin/new-class";
+        });
+      } else {
+        Swal.fire({
+          title: "Publishing cancelled",
+          text: "Your file has not been published.",
+          icon: "error"
+        });
+      }
+    });
+  };
+  
+
   return (
     <div className='h-auto m-5'>
       <Box mt={2} sx={{
@@ -28,6 +59,7 @@ function AdminReviewPublish() {
                 <Typography variant='subtitle1'>Review, Publish, and Inspire Learning!</Typography>
               </Grid>
 
+              {/* Rest of your content */}
 
               <Grid container mt={2}>
                 <Grid item xs={4} sm={4} md={4} lg={4} padding={1} mt={-2}>
@@ -56,7 +88,7 @@ function AdminReviewPublish() {
 
               </Grid>
 
-              <Grid container mt={2}>
+              <Grid container >
                 <Grid item xs={2} sm={2} md={2} lg={2} padding={1} >
                   <Typography variant='subtitle1' fontWeight={600} style={{ fontFamily: '"Mukta", sans-serif' }}> Day</Typography>
                   <h1 className='text-lg'>Friday</h1>
@@ -88,7 +120,7 @@ function AdminReviewPublish() {
               </Grid>
 
 
-              <Grid container mt={2} p={1}>
+              <Grid container  p={1}>
                 
                 <Grid item xs={6} sm={4} md={2} lg={2} flexDirection={'column'} display={'flex'} justifyContent={'center'}>
                   <img src={pdf} width={50} alt="" />
@@ -111,29 +143,21 @@ function AdminReviewPublish() {
 
               </Grid>
 
-
-
-
               <Grid item xs={12} sm={12} md={12} lg={12} display={'flex'} justifyContent={'start'} margin={1}>
                 <Stack spacing={2} direction="row">
                   <Link to="/admin/new-class/pricing" style={{ textDecoration: 'none', color: 'inherit' }}>
-
                     <Button variant="outlined">Previous Page</Button>
                   </Link>
 
-                  <Link to="/admin/new-class" style={{ textDecoration: 'none', color: 'inherit' }}>
-
-                    <Button variant="contained">Publish</Button>
-                  </Link>
+                  <Button variant="contained" onClick={handlePublish}>Publish</Button>
                 </Stack>
               </Grid>
-
             </Box>
           </Grid>
         </Grid>
       </Box>
     </div>
-  )
+  );
 }
 
-export default AdminReviewPublish
+export default AdminReviewPublish;
