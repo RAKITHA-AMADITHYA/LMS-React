@@ -21,8 +21,8 @@ function AdminNewTeacher() {
 
       <Box sx={{ maxHeight: '400px', overflowY: 'auto' }}>
         <Grid container direction="row" rowSpacing={2} columnSpacing={2}>
-          <TeacherStudentCard/>
-          <TeacherStudentCard/>
+          <TeacherStudentCard path="/admin/teacher-info"/>
+          <TeacherStudentCard path="/admin/teacher-info" />
         </Grid>
       </Box>
 
