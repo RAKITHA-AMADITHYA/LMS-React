@@ -178,7 +178,7 @@ function AdminViewClassInfo() {
                     </Grid>
 
 
-                    <Link to="/institute/assignment/overview" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link to="/admin/assignment/overview" style={{ textDecoration: 'none', color: 'inherit' }}>
                         <Grid item lg={12} display={'flex'} justifyContent={'center'} mt={3}>
 
                             <Button variant="outlined" color="error" fullWidth>
