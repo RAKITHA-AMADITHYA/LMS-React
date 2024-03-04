@@ -25,7 +25,7 @@ function AdminStudentInfo() {
     
                 {/* Right side container */}
     
-                <Grid item xs={12} sm={5} md={4} lg={7} display={'flex'} ml={2} >
+                <Grid item xs={12} sm={5} md={4} lg={8} display={'flex'} ml={2} >
     
     
                   <Grid item lg={12} >

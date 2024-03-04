@@ -14,7 +14,7 @@ function AdminTeacherInfo() {
                 <TeacherInfoCard
                     name='Jagath Chandhana'
                     description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                   molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+               molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
                     email='jagathchandhana1@gmail.com'
                     contact='0123456789'
                     education='Bsc. In Chemistry HNDE Sociology'
